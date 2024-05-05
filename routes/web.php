@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AccountController;
+use App\Http\Controllers\SiteControlller;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +16,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[SiteControlller::class,'dashboardClient'])->name('dashboardClient');
 
-Route::get('/thanhhai', function () {
-    return view('thanhhai');
-});
+Route::get('login',[AccountController::class,'login'])->name('login');
+
+Route::get('register',[AccountController::class,'register'])->name('register');
