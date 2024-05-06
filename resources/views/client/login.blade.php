@@ -1,5 +1,7 @@
 @extends('layouts.client')
-
+@section('image')
+<img class="mx-5" style="border-radius: 15px" width="150px" height="90px" src="./images/logo.png" alt="">
+@endsection
 @section('content')
 <div class="mt-3 mb-3 p-3 m-auto w-25" style="border: 1px #cdcdcd solid">
     <h3 class="text-center mb-3 mt-2">Login</h3>

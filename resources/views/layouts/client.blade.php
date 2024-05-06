@@ -22,8 +22,8 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="<?php echo route('dashboardClient') ?>">
-                    <img class="mx-5" style="border-radius: 15px" width="150px" height="90px" src="./images/logo.png"
-                        alt="">
+
+                    @yield('image')
                 </a>
                 <div class="nav-end navbar order-last">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -34,7 +34,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="<?php echo route('login') ?>">Login</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="<?php echo route('user.index') ?>">Users</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
